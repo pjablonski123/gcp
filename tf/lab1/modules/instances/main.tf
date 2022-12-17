@@ -17,8 +17,8 @@ resource "google_compute_instance" "vm_instance" {
   }
   
   metadata_startup_script = <<-EOT
-        #!/bin/bash
-        EOT
+      #!/bin/bash
+    EOT
   
   allow_stopping_for_update = true
   
