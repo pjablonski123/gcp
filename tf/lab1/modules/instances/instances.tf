@@ -1,10 +1,10 @@
 resource "google_compute_instance" "tf-instance-1" {
   name         = "tf-instance-1"
-  machine_type = "f1-micro"
+  machine_type = "n1-standard"
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = ""
     }
   }
 
@@ -26,11 +26,11 @@ resource "google_compute_instance" "tf-instance-1" {
 
 resource "google_compute_instance" "tf-instance-2" {
   name         = "tf-instance-2"
-  machine_type = "f1-micro"
+  machine_type = "n1-standard"
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = ""
     }
   }
 
