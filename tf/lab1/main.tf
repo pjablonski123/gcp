@@ -13,3 +13,6 @@ provider "google" {
   zone    = var.zone
 }
 
+module "gcp-vm-instance" {
+  source = "./modules/instances"
+}
