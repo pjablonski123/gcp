@@ -1,4 +1,4 @@
-resource "google_compute_instance" "vm_instance" {
+resource "google_compute_instance" "tf-instance-1" {
   name         = "tf-instance-1"
   machine_type = "f1-micro"
 
@@ -15,16 +15,16 @@ resource "google_compute_instance" "vm_instance" {
       // Ephemeral public IP
     }
   }
-  
+
   metadata_startup_script = <<-EOT
       #!/bin/bash
     EOT
-  
+
   allow_stopping_for_update = true
-  
+
 }
 
-resource "google_compute_instance" "vm_instance" {
+resource "google_compute_instance" "tf-instance-2" {
   name         = "tf-instance-2"
   machine_type = "f1-micro"
 
@@ -41,12 +41,10 @@ resource "google_compute_instance" "vm_instance" {
       // Ephemeral public IP
     }
   }
-  
+
   metadata_startup_script = <<-EOT
       #!/bin/bash
     EOT
-  
+
   allow_stopping_for_update = true
-  
 }
-Footer
