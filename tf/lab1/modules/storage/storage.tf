@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "bucket" {
-  name = "tf-bucket-830313"
+  name = "tf-bucket-qwerty"
   location = "US"
   force_destroy = true
 
