@@ -13,6 +13,6 @@ provider "google" {
   zone    = var.zone
 }
 
-module "gcp-vm-instance" {
-  source = "./modules/instances/instances.tf"
+module "instances" {
+  source = "./modules/instances"
 }
