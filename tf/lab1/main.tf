@@ -14,5 +14,5 @@ provider "google" {
 }
 
 module "gcp-vm-instance" {
-  source = "./modules/instances"
+  source = "./modules/instances/instances.tf"
 }
