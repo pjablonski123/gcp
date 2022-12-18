@@ -10,7 +10,7 @@ resource "google_compute_instance" "tf-instance-1" {
 
   network_interface {
     network = "default"
-    #network = "VPC Name"
+    #network = "[VPC Name]"
     #subnetwork = "subnet-01"
 
     access_config {
@@ -38,8 +38,8 @@ resource "google_compute_instance" "tf-instance-2" {
 
   network_interface {
     network = "default"
-    #network = "VPC Name"
-    #subnetwork = "subnet-01"
+    #network = "[VPC Name]"
+    #subnetwork = "subnet-02"
     
     access_config {
       // Ephemeral public IP
