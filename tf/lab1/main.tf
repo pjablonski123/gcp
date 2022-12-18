@@ -15,13 +15,13 @@ terraform {
 /*
 terraform {
   backend "gcs" {
-    bucket  = "tf-bucket-830313"
+    bucket  = "[TYPE_BUCKET_NAME]"
     prefix  = "terraform/state"
   }
 }
 */
 provider "google" {
-  version = "3.5.0"
+  #version = "3.5.0"
   project = var.project_id
   region  = var.region
   zone    = var.zone
@@ -38,7 +38,7 @@ module "storage" {
 /*
 resource "google_compute_firewall" "default" {
   name    = "tf-firewall"
-  network = "tf-vpc-31670"
+  network = "[TYPE_VPC_NAME]"
 
   allow {
     protocol = "tcp"
@@ -50,12 +50,12 @@ resource "google_compute_firewall" "default" {
 }
 
 resource "google_compute_network" "default" {
-  name = "tf-vpc-31670"
+  name = "[TYPE_VPC_NAME]"
 }
 
 module "network" {
   source  = "terraform-google-modules/network/google"
-  version = "3.4.0"
+  version = "3.5.0"
   project_id   = var.project_id
   network_name = "VPC Name"
   routing_mode = "GLOBAL"
