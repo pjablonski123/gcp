@@ -69,7 +69,7 @@ module "network" {
       {
           subnet_name           = "subnet-02"
           subnet_ip             = "10.10.20.0/24"
-          subnet_region         = "us-west1"
+          subnet_region         = "us-east1"
       }
   ]
 
