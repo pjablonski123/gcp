@@ -21,3 +21,4 @@ spec:
       image: nginx
       securityContext:
         privileged: true
+```
