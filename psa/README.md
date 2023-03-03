@@ -2,8 +2,7 @@
 
 Enhancement to the lab "Securing Google Kubernetes Engine with Cloud IAM and Pod Security Policies, Task 2".
 
-_The Pod Security Standards define three different policies to broadly cover the security spectrum. These policies are cumulative and range from highly-permissive to highly-restrictive. This guide outlines the requirements of each policy.
-_
+*The Pod Security Standards define three different policies to broadly cover the security spectrum. These policies are cumulative and range from highly-permissive to highly-restrictive. This guide outlines the requirements of each policy.*
 
 
 https://kubernetes.io/docs/concepts/security/pod-security-standards/
