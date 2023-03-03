@@ -1,10 +1,15 @@
-Migration to Pod Security Admission
+## Migration to Pod Security Admission
+
+Enhancement to the lab "Securing Google Kubernetes Engine with Cloud IAM and Pod Security Policies".
+
+https://kubernetes.io/docs/concepts/security/pod-security-standards/
+
 ```
 kubectl label --dry-run=server --overwrite ns default pod-security.kubernetes.io/enforce=restricted
 kubectl label --overwrite ns default pod-security.kubernetes.io/enforce=restricted
 kubectl get ns --show-labels
 ```
-https://kubernetes.io/docs/concepts/security/pod-security-standards/
+
 
 
 privileged-pod.yaml
