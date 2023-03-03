@@ -56,6 +56,8 @@ Log observation:
 $ kubectl apply -f privileged-pod.yaml
 Error from server (Forbidden): error when creating "privileged-pod.yaml": pods "privileged-pod" is forbidden: violates PodSecurity "restricted:latest": host namespaces (hostNetwork=true, hostPID=true), hostPort (container "privileged-pod" uses hostPort 80), privileged (container "privileged-pod" must not set securityContext.privileged=true), allowPrivilegeEscalation != false (container "privileged-pod" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "privileged-pod" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "privileged-pod" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "privileged-pod" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
 ```
+<img width="1393" alt="image" src="https://user-images.githubusercontent.com/36215334/222840102-0e3008a3-6fe9-4fe5-8e1e-9ada24b9b1f7.png">
+
 - in the GUI: https://console.cloud.google.com/logs/query use specific keywords in a query
 ```
 resource.type="k8s_cluster"
