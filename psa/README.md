@@ -62,5 +62,6 @@ Error from server (Forbidden): error when creating "privileged-pod.yaml": pods "
 ```
 resource.type="k8s_cluster"
 protoPayload.response.reason="Forbidden"
-protoPayload.resourceName="core/v1/namespaces/default/pods/nginx"
+protoPayload.resourceName="core/v1/namespaces/default/pods/privileged-pod"
 ```
+<img width="1359" alt="image" src="https://user-images.githubusercontent.com/36215334/222844721-3aac378a-a00c-4340-88d1-4555dd8bda36.png">
