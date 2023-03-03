@@ -34,7 +34,7 @@ kubectl label --overwrite ns default pod-security.kubernetes.io/enforce=restrict
 kubectl get ns --show-labels
 ```
 
-4. Deploy the privileged pod.
+4. Try to deploy the privileged pod. Deployment should be prevented.
 
 privileged-pod.yaml
 ```
